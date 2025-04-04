@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X - Shoes | Estoque</title>
+  <link rel="stylesheet" href="estoque.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../home/index.html">🏠 Home</a>
+    <a href="../notas/notas.html">🧾 Notas</a>
+    <a href="../frete/frete.html">🚚 Frete</a>
+    <a href="../administração/admin.html">📁 Administração</a>
+  </nav>
+
+  <header>
+    <h1>Estoque - X Shoes</h1>
+    <p>Gerencie seus produtos com praticidade e rapidez.</p>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <input type="text" id="nome" placeholder="Nome do Produto">
+      <input type="text" id="descricao" placeholder="Descrição do Produto">
+      <input type="number" id="quantidade" placeholder="Quantidade">
+      <input type="number" id="valor" placeholder="Valor Unitário (R$)" step="0.01">
+      <button onclick="adicionarProduto()">Adicionar Produto</button>
+      <button onclick="gerarRelatorio()">Gerar Relatório (.xlsx)</button>
+    </section>
+
+    <section class="tabela">
+      <h2>Itens em Estoque</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Valor Unitário</th>
+            <th>Valor Total</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="lista-produtos"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="estoque.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X - Shoes | Notas</title>
+  <link rel="stylesheet" href="notas.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../home/index.html">🏠 Home</a>
+    <a href="../estoque/estoque.html">📦 Estoque</a>
+    <a href="../frete/frete.html">🚚 Frete</a>
+    <a href="../administração/admin.html">📁 Administração</a>
+  </nav>
+
+  <header>
+    <h1>Notas Fiscais - X Shoes</h1>
+    <p>Preencha os dados abaixo para simular a geração de uma nota fiscal.</p>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <input type="text" id="cliente" placeholder="Nome do Cliente">
+      <input type="text" id="produto" placeholder="Produto">
+      <input type="number" id="quantidade" placeholder="Quantidade">
+      <input type="number" id="valor" placeholder="Valor Unitário (R$)" step="0.01">
+      <button onclick="gerarNota()">Gerar Nota</button>
+    </section>
+
+    <section class="nota-gerada" id="nota-exibida"></section>
+  </main>
+
+  <script src="notas.js"></script>
+</body>
+</html>

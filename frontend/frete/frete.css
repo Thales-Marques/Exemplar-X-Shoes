@@ -1,0 +1,99 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #1e1e2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    padding: 20px;
+}
+  
+  /* Navbar */
+.navbar {
+    background-color: #2e2e3f;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.navbar a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #393955;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+  
+.navbar a:hover {
+    background-color: #ff6b00;
+    color: #fff;
+}
+  
+  /* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+h1 {
+    color: #ff6b00;
+    font-size: 2rem;
+}
+  
+p {
+    color: #ccc;
+}
+  
+  /* Formulário */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    gap: 10px;
+}
+  
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+input {
+    background-color: #2e2e3f;
+    color: #fff;
+}
+  
+button {
+    background-color: #ff6b00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+  
+button:hover {
+    background-color: #ff892e;
+}
+  
+  /* Resultado */
+.resultado {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #2e2e3f;
+    padding: 20px;
+    border-radius: 8px;
+    color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.2);
+}  

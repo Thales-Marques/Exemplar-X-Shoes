@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X - Shoes | Frete</title>
+  <link rel="stylesheet" href="frete.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../home/index.html">🏠 Home</a>
+    <a href="../estoque/estoque.html">📦 Estoque</a>
+    <a href="../notas/notas.html">🧾 Notas</a>
+    <a href="../administração/admin.html">📁 Administração</a>
+  </nav>
+
+  <header>
+    <h1>Simulador de Frete - X Shoes</h1>
+    <p>Calcule o valor estimado de envio com base no peso e CEP.</p>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <input type="text" id="cep" placeholder="Digite o CEP (simulado)">
+      <input type="number" id="peso" placeholder="Peso total (kg)" step="0.1">
+      <button onclick="calcularFrete()">Calcular Frete</button>
+    </section>
+
+    <section class="resultado" id="resultado-frete"></section>
+  </main>
+
+  <script src="frete.js"></script>
+</body>
+</html>
